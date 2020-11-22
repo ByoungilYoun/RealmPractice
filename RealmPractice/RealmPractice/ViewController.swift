@@ -15,7 +15,14 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    render()
+    
+    realm.beginWrite()// 시작하기 전에 begin
+    realm.delete(realm.objects(Person.self)) // 다 지우고
+    try! realm.commitWrite() // 끝나면 commit
+    
+    save()  // 새로 저장하고
+     
+    render() // 뿌리기 
   }
   
   // realm 데이터베이스에 있는 모든 데이터를 가져와서 화면에 뿌리기
@@ -42,8 +49,8 @@ class ViewController: UIViewController {
   
   func save () {
     let joe = Person()
-    joe.firstName = "Joe"
-    joe.lastName = "Smith"
+    joe.firstName = "Jenny"
+    joe.lastName = "Ho"
     
     // add 하기 전에 beginWrite 을 해준다. 데이터베이스에 적기 시작할거다 라는 것을 알려주기 위해
     realm.beginWrite()
