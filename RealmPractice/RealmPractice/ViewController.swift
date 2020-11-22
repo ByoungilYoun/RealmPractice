@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     save()  // 새로 저장하고
      
-    render() // 뿌리기 
+    render() // 뿌리기
   }
   
   // realm 데이터베이스에 있는 모든 데이터를 가져와서 화면에 뿌리기
@@ -34,27 +34,35 @@ class ViewController: UIViewController {
       let lastName = person.lastName
       let fullName = "\(firstName) \(lastName)"
       
-      
-      let label = UILabel(frame: view.bounds)
-      label.text = fullName
-      label.textAlignment = .center
-      label.numberOfLines = 0
-      view.addSubview(label)
-      
-      label.font = UIFont(name: "Helvetica", size: 42)
+      print("\(fullName)")
     }
   }
   
   
   
   func save () {
-    let joe = Person()
-    joe.firstName = "Jenny"
-    joe.lastName = "Ho"
+    let jenny = Person()
+    jenny.firstName = "Jenny"
+    jenny.lastName = "Ho"
+    
+    let dan = Person()
+    dan.firstName = "Dan"
+    dan.lastName = "Ho"
+    
+    let kay = Person()
+    kay.firstName = "Kay"
+    kay.lastName = "Wsdf"
+    
+    let whu = Person()
+    whu.firstName = "Whu"
+    whu.lastName = "Pouish"
     
     // add 하기 전에 beginWrite 을 해준다. 데이터베이스에 적기 시작할거다 라는 것을 알려주기 위해
     realm.beginWrite()
-    realm.add(joe)
+    realm.add(jenny)
+    realm.add(dan)
+    realm.add(kay)
+    realm.add(whu)
     try! realm.commitWrite()
   }
 
