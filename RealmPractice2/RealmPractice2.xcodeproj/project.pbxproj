@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		0F9423CA256A75CF00A3C2E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F9423C8256A75CF00A3C2E3 /* Main.storyboard */; };
 		0F9423CC256A75D000A3C2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F9423CB256A75D000A3C2E3 /* Assets.xcassets */; };
 		0F9423CF256A75D000A3C2E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F9423CD256A75D000A3C2E3 /* LaunchScreen.storyboard */; };
+		0FE0E14D256AADA9009A3F9E /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE0E14C256AADA9009A3F9E /* Cat.swift */; };
 		EB2587B81F67559791529C53 /* Pods_RealmPractice2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30A23EE143524D74132625D /* Pods_RealmPractice2.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		0F9423CB256A75D000A3C2E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F9423CE256A75D000A3C2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F9423D0256A75D000A3C2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FE0E14C256AADA9009A3F9E /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 		B30A23EE143524D74132625D /* Pods_RealmPractice2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmPractice2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4FBB6328ED72DC6557314B /* Pods-RealmPractice2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmPractice2.release.xcconfig"; path = "Target Support Files/Pods-RealmPractice2/Pods-RealmPractice2.release.xcconfig"; sourceTree = "<group>"; };
 		EC8BDE3D205CA0EE7FCAD29B /* Pods-RealmPractice2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmPractice2.debug.xcconfig"; path = "Target Support Files/Pods-RealmPractice2/Pods-RealmPractice2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			children = (
 				0F9423C2256A75CF00A3C2E3 /* AppDelegate.swift */,
 				0F9423C4256A75CF00A3C2E3 /* SceneDelegate.swift */,
+				0FE0E14C256AADA9009A3F9E /* Cat.swift */,
 				0F9423C6256A75CF00A3C2E3 /* ViewController.swift */,
 				0F9423C8256A75CF00A3C2E3 /* Main.storyboard */,
 				0F9423CB256A75D000A3C2E3 /* Assets.xcassets */,
@@ -88,7 +91,6 @@
 				EC8BDE3D205CA0EE7FCAD29B /* Pods-RealmPractice2.debug.xcconfig */,
 				DD4FBB6328ED72DC6557314B /* Pods-RealmPractice2.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE0E14D256AADA9009A3F9E /* Cat.swift in Sources */,
 				0F9423C7256A75CF00A3C2E3 /* ViewController.swift in Sources */,
 				0F9423C3256A75CF00A3C2E3 /* AppDelegate.swift in Sources */,
 				0F9423C5256A75CF00A3C2E3 /* SceneDelegate.swift in Sources */,
@@ -359,6 +362,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J7MH5N2BKX;
 				INFOPLIST_FILE = RealmPractice2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,6 +383,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J7MH5N2BKX;
 				INFOPLIST_FILE = RealmPractice2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
